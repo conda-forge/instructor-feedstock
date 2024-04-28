@@ -1,5 +1,5 @@
 {% set name = "instructor" %}
-{% set version = "1.2.2" %}
+{% set version = "1.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jxnl/instructor/archive/refs/tags/{{ version }}.tar.gz
-  sha256: aa60dc9e18cd008d83a677846be15dd6ea451eaaea1fe8c47c06c0a0afbed16b
+  sha256: 67b97a25df935a3d2dfe3402eaa79fe9cdb8d3bf971ef9a8251ad6da9ae506a2
 
 build:
   entry_points:
