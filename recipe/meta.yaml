@@ -32,6 +32,7 @@ requirements:
     - tenacity >=8.2.3,<9.0.0
     - pydantic-core >=2.18.0,<3.0.0
     - jiter >=0.4.1,<0.5.0
+    - cohere >=5.1.8,<6.0.0
   run_constrained:
     - fastapi >=0.109.2,<0.110.0
     - redis-py >=5.0.1,<6.0.0
@@ -43,9 +44,7 @@ requirements:
     - anthropic >=0.23.1,<0.24.0
     - xmltodict >=0.13.0,<0.14.0
     - groq >=0.4.2,<0.5.0
-    - cohere >=5.1.8,<6.0.0
     - mistralai >=0.1.8,<0.2.0
-    - cohere
 
 test:
   imports:
