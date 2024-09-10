@@ -1,5 +1,5 @@
 {% set name = "instructor" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jxnl/instructor/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 6fe759d7aee6404a524206636782ef1271e73d887c2a479645ab9816b1ba11c4
+  sha256: fa54e52fb201347bcf4a5fc63fa047563da88a766efe81eb1b32ea2d43347a1d
 
 build:
   entry_points:
@@ -31,7 +31,7 @@ requirements:
     - aiohttp >=3.9.1,<4.0.0
     - tenacity >=8.2.3,<9.0.0
     - pydantic-core >=2.18.0,<3.0.0
-    - jiter >=0.4.1,<0.5.0
+    - jiter >=0.5.0,<0.6.0
   run_constrained:
     - fastapi >=0.109.2,<0.110.0
     - redis-py >=5.0.1,<6.0.0
