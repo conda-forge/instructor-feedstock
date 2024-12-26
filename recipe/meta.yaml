@@ -21,6 +21,7 @@ requirements:
   host:
     - python {{ python_min }}
     - poetry-core
+    - hatchling
     - pip
   run:
     - python >={{ python_min }}
