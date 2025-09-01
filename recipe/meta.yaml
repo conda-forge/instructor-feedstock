@@ -1,5 +1,5 @@
 {% set name = "instructor" %}
-{% set version = "1.8.3" %}
+{% set version = "1.10.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/jxnl/instructor/archive/refs/tags/{{ version }}.tar.gz
-  sha256: ee9943cc75e909edf3865258a24d34560309dce003cdd6b3c78ea88ad1ed0ed4
+  sha256: 23ae40151fcd2d905702c4ca609780cb8c587b2910b61c435fcc7644b27bb977
 
 build:
   entry_points:
@@ -25,30 +25,30 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - openai >=1.52.0,<2.0.0
-    - pydantic >=2.8.0,<3.0.0
+    - openai >=1.82.0,<2.0.0
+    - pydantic >=2.10.4,<3.0.0
     - docstring_parser >=0.16.0,<0.17.0
-    - typer >=0.9.0,<1.0.0
-    - rich >=13.7.0,<14.0.0
-    - aiohttp >=3.9.1,<4.0.0
+    - typer >=0.12.3,<1.0.0
+    - rich >=13.7.1,<15.0.0
+    - aiohttp >=3.11.11,<4.0.0
     - requests >=2.32.3
-    - tenacity >=9.0.0,<10.0.0
-    - pydantic-core >=2.18.0,<3.0.0
+    - tenacity ==8.2.3
+    - pydantic-core >=2.27.2,<3.0.0
     - jiter >=0.6.1,<0.7
     - jinja2 >=3.1.4
-  run_constrained:
-    - fastapi >=0.109.2,<0.110.0
-    - redis-py >=5.0.1,<6.0.0
     - diskcache >=5.6.3,<6.0.0
-    - pandas >=2.2.0,<3.0.0
+  run_constrained:
+    - fastapi ==0.115.6,<0.116.0
+    - redis-py ==5.0.4,<6.0.0
+    - pandas >=2.2.2,<3.0.0
     - tabulate >=0.9.0,<0.10.0
-    - pydantic_extra_types >=2.6.0,<3.0.0
-    - litellm >=1.0.0,<2.0.0
-    - anthropic >=0.23.1,<0.24.0
-    - xmltodict >=0.13.0,<0.14.0
-    - groq >=0.4.2,<0.5.0
-    - cohere >=5.1.8,<6.0.0
-    - mistralai >=0.1.8,<0.2.0
+    - pydantic_extra_types >=2.7.0,<3.0.0
+    - litellm >=1.37.19,<2.0.0
+    - anthropic >=0.53.0,<0.54.0
+    - xmltodict >=0.13.0,<0.15.0
+    - groq >=0.5.0,<0.6.0
+    - cohere >=5.3.4,<6.0.0
+    - mistralai >=0.2.0,<0.3.0
 
 test:
   imports:
